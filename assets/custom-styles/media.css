@@ -14,6 +14,10 @@
         margin: 0 auto 24px;
         max-width: 100%;
     }
+
+    .site-header .navbar-collapse {
+        display: none;
+    }
 }
 
 @media (max-width: 767px) {
@@ -59,15 +63,15 @@
     }
 }
 
-
 @media (max-width: 420px) {
-    .custom-nav-tabs{
+    .custom-nav-tabs {
         flex-wrap: wrap !important;
     }
-    .custom-nav-tabs .nav-link{
+    .custom-nav-tabs .nav-link {
         border: none;
     }
-    .site-header.scrolled .navbar-brand,.navbar-brand {
+    .site-header.scrolled .navbar-brand,
+    .navbar-brand {
         height: 22px;
     }
 }
