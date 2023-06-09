@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
 
 :root {
-    --color-primary: #02bf9b;
+    --color-primary: #1565D8;
     --color-light: #515355;
     --color-dark: #202224;
     --color-primaryLight: #dcf8f4;
     --color-deece1: #deece1;
     --color-black: #000000;
     --color-white: #ffffff;
-    --font-Roboto: "Roboto", sans-serif;
+    --font-Titillium: 'Titillium Web', sans-serif;
 }
 
 * {
@@ -20,8 +20,8 @@ body {
     margin: 0;
     width: 100%;
     height: auto;
-    background-color: #f7f7f7;
-    font-family: var(--font-Roboto);
+    background-color: var(--color-white);
+    font-family: sans-serif;
     font-style: normal;
 }
 a {
@@ -48,6 +48,3 @@ h6 {
     margin: 0;
 }
 
-.clr-primary {
-    color: var(--color-primary);
-}
