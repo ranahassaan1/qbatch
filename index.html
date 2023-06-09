@@ -37,7 +37,10 @@
           >
             <i class="fa-solid fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse show order-2 order-lg-1" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse show order-2 order-lg-1"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav mx-auto px-0 px-lg-4 w-100">
               <li
                 class="nav-item custom-nav-item d-flex align-items-center w-100 justify-content-between position-relative"
@@ -70,7 +73,9 @@
               </li>
             </ul>
           </div>
-          <div class="nav-item-right d-flex align-items-center order-1 order-lg-2">
+          <div
+            class="nav-item-right d-flex align-items-center order-1 order-lg-2"
+          >
             <a href="//" class="btn_simple">
               <img src="assets/media/svgs/graph.svg" alt="" />
             </a>
@@ -103,7 +108,7 @@
                     <span class="dropdown-item-icon">
                       <i class="fa-solid fa-user"></i>
                     </span>
-                     profile
+                    profile
                   </a>
                 </li>
                 <li>
@@ -154,7 +159,1185 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="all-statics mt-24">
+        <div class="container">
+          <div class="row gy-3">
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="report-card">
+                <p>Unit Arrived in (Not Recevied)</p>
+                <h1>24</h1>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="report-card">
+                <p>PO Arrived in (Not Received)</p>
+                <h1>1</h1>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="report-card">
+                <p>Daily Received</p>
+                <h1>32</h1>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+              <div class="report-card">
+                <p>Daily Arrived in Units</p>
+                <h1>0</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="inbound-statics mt-24">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="title-lg m-0">Inbound</h1>
+              <div
+                class="inbound-statics-panel d-flex align-items-center mt-24"
+              >
+                <button type="button" class="panel-btn">
+                  <span class="panel-btn-inner d-flex align-items-center p-0">
+                    <span
+                      class="counts d-flex align-items-center justify-content-center me-2"
+                    >
+                      1
+                    </span>
+                    check in
+                    <img src="assets/media/svgs/qus-mark.svg" class="ms-2" />
+                  </span>
+                </button>
+                <button type="button" class="panel-btn">
+                  <span class="panel-btn-inner d-flex align-items-center p-0">
+                    <span
+                      class="counts d-flex align-items-center justify-content-center me-2"
+                    >
+                      2
+                    </span>
+                    ship
+                    <img src="assets/media/svgs/qus-mark.svg" class="ms-2" />
+                  </span>
+                </button>
+                <button type="button" class="panel-btn active">
+                  <span class="panel-btn-inner d-flex align-items-center p-0">
+                    <span
+                      class="counts d-flex align-items-center justify-content-center me-2"
+                    >
+                      3
+                    </span>
+                    Print 2D Labels
+                    <img src="assets/media/svgs/qus-mark.svg" class="ms-2" />
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-sec mt-24">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- <div class="col-12">
+              <div
+                class="d-flex align-items-md-center justify-content-between gap-3 flex-column flex-md-row align-items-start"
+              >
+                <h1 class="title-lg m-0">Products</h1>
+
+                <div class="d-flex align-items-center gap-4">
+                  <button type="button" class="btn-primary">
+                    Add to storage
+                  </button>
+                  <ul
+                    class="nav nav-tabs custom-nav-tabs flex-nowrap"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="shipment-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#shipment-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="shipment-tab-pane"
+                        aria-selected="true"
+                      >
+                        Shipment Mode
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="product-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#product-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="product-tab-pane"
+                        aria-selected="false"
+                      >
+                        Product Mode
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="storage-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#storage-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="storage-tab-pane"
+                        aria-selected="false"
+                      >
+                        Storage PO
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-xl-6 col-lg-5 col-md-9 col-6 order-0">
+              <h1 class="title-lg m-0">Products</h1>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-3 col-6 order-1">
+              <button type="button" class="btn-primary text-nowrap">Add to storage</button>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-12 order-3 order-lg-2">
+              <ul
+                class="nav nav-tabs custom-nav-tabs flex-nowrap"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="shipment-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#shipment-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="shipment-tab-pane"
+                    aria-selected="true"
+                  >
+                    Shipment Mode
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="product-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#product-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="product-tab-pane"
+                    aria-selected="false"
+                  >
+                    Product Mode
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="storage-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#storage-tab-pane"
+                    type="button"
+                    role="tab"
+                    aria-controls="storage-tab-pane"
+                    aria-selected="false"
+                  >
+                    Storage PO
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 order-2 order-lg-3">
+              <form action="" class="filters- mt-24 mb-24">
+                <div class="row gy-2">
+                  <div class="col-md-4">
+                    <div class="input-cover w-100 position-relative">
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="Search invoice, PO, Order ID, Tracking ID"
+                      />
+                      <button type="submit" class="search-btn">
+                        <img src="assets/media/svgs/search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-cover w-100 position-relative">
+                      <input
+                        type="search"
+                        class="form-control"
+                        placeholder="By UPC/ASIN/SKU/FNSKU/Vendor UPC"
+                      />
+                      <button type="submit" class="search-btn">
+                        <img src="assets/media/svgs/search.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="input-cover w-100 position-relative">
+                      <select
+                        class="form-select form-control"
+                        aria-label="Default select"
+                      >
+                        <option value="1" selected>User</option>
+                        <option value="2">Admin</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 order-4">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="shipment-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="shipment-tab"
+                  tabindex="0"
+                >
+                  <div class="product-listing w-100">
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="product-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="product-tab"
+                  tabindex="0"
+                >
+                  <div class="product-listing w-100">
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="storage-tab-pane"
+                  role="tabpanel"
+                  aria-labelledby="storage-tab"
+                  tabindex="0"
+                >
+                  <div class="product-listing w-100">
+                    <div class="table-responsive custom-table">
+                      <table class="table m-0">
+                        <thead class="table-header">
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Dimensions</th>
+                            <th scope="col">FNSKU</th>
+                            <th scope="col">PO #</th>
+                            <th scope="col">Client Name</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <div class="product d-flex align-items-center">
+                                <div class="img">
+                                  <img
+                                    src="assets/media/imgs/product-img.jpg"
+                                    alt=""
+                                  />
+                                </div>
+                                <div class="product-content">
+                                  <h5 class="product-title">
+                                    Nestle Raisinets Milk Chocolate Nestle
+                                    Raisinets Milk Chocolate nestle
+                                  </h5>
+                                  <p class="product-code m-0 text-nowrap">
+                                    ASIN: SKU-WM-245667
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="quantity text-small">
+                                <div>
+                                  <h5>02</h5>
+                                  <p>Received</p>
+                                </div>
+                                <div>
+                                  <h5>05</h5>
+                                  <p>Ordered</p>
+                                </div>
+                                <div>
+                                  <h5>01</h5>
+                                  <p>Missing</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <span class="status"> status </span>
+                            </td>
+                            <td>
+                              <div class="dimensions text-small">
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">5.5</h5>
+                                  <p class="text-center">L (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">W (in)</p>
+                                </div>
+                                <h5 class="text-center">x</h5>
+                                <div
+                                  class="d-flex flex-column justify-content-center align-content-center text-center"
+                                >
+                                  <h5 class="text-center">2.5</h5>
+                                  <p class="text-center">D (in)</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="fnsku text-small">
+                                <div>
+                                  <h5 class="text-nowrap">FNU-WM-420485</h5>
+                                  <p class="text-nowrap">SKU: SKU-WM-245667</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="po text-small">
+                                <div>
+                                  <h5>94001362023616566319</h5>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="client-namt text-small">
+                                <div>
+                                  <h5 class="text-nowrap">Karen Giancaspro</h5>
+                                  <p class="text-nowrap">Company Name Here</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td style="vertical-align: middle">
+                              <div
+                                class="table-btn-group d-flex align-items-center"
+                              >
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/print.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/clock.svg"
+                                    alt=""
+                                  />
+                                </button>
+                                <button type="button" class="">
+                                  <img
+                                    src="assets/media/svgs/arrow-left-short.svg"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="assets/jquery/jquery.js"></script>
     <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>

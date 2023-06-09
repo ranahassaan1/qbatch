@@ -191,4 +191,5 @@
 .dropdown-item-icon svg path {
     color: var(--color-primary);
     fill: var(--color-primary);
+    background: #8f5aff08;
 }

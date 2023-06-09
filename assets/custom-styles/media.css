@@ -7,4 +7,67 @@
     .custom-nav-item::after {
         display: none;
     }
+    .report-card {
+        padding: 10px;
+    }
+    .custom-nav-tabs {
+        margin: 0 auto 24px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .inbound-statics-panel {
+        padding: 10px;
+        justify-content: center;
+    }
+    .inbound-statics-panel .panel-btn {
+        padding: 0 15px;
+    }
+    .panel-btn::after {
+        display: none;
+    }
+    .inbound-statics-panel .panel-btn:first-child {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .inbound-statics-panel {
+        flex-direction: column;
+        align-items: start !important;
+    }
+    .inbound-statics-panel .panel-btn {
+        padding: 5px 10px !important;
+    }
+    .panel-btn-inner::before {
+        bottom: auto;
+        left: -10px;
+        transform: unset;
+        height: 100%;
+        width: 2.5px;
+    }
+    .counts {
+        padding: 1px 1px 1px 0;
+    }
+    .inbound-statics-panel .panel-btn {
+        font-size: 16px;
+    }
+    .report-card h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .custom-nav-tabs{
+        flex-wrap: wrap !important;
+    }
+    .custom-nav-tabs .nav-link{
+        border: none;
+    }
+    .site-header.scrolled .navbar-brand,.navbar-brand {
+        height: 22px;
+    }
 }
