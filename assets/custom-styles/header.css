@@ -159,7 +159,7 @@
 }
 
 .user-menu.dropdown .dropdown-menu {
-    padding: 5PX 0;
+    padding: 5px 0;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
 }
@@ -169,10 +169,9 @@
     text-transform: capitalize;
     display: flex;
     align-items: center;
-    font-size: 16PX;
+    font-size: 16px;
     font-weight: 500;
-    font-family:var(--font-Titillium);
-    /* color: var(--color-primary); */
+    font-family: var(--font-Titillium);
 }
 
 .dropdown-item-icon {
@@ -181,12 +180,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5PX;
+    margin-right: 5px;
     color: var(--color-primary);
     font-size: 14px;
     background: var(--font-Titillium);
 }
-
 
 .dropdown-item-icon svg path {
     color: var(--color-primary);

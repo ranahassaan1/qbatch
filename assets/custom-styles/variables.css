@@ -2,10 +2,8 @@
 
 :root {
     --color-primary: #1565d8;
-    --color-light: #515355;
-    --color-dark: #202224;
-    --color-primaryLight: #dcf8f4;
-    --color-deece1: #deece1;
+    --color-grey: #4e5969;
+    --color-lightgrey: #78909c;
     --color-black: #000000;
     --color-white: #ffffff;
     --font-Titillium: "Titillium Web", sans-serif;
@@ -70,6 +68,6 @@ h6 {
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    color: #4e5969;
+    color: var(--color-grey);
     text-transform: capitalize;
 }
